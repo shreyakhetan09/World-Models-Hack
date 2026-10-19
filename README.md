@@ -1,6 +1,5 @@
 # RescueSim
 
-Source: [dhairyaameria/World-Models-Hack](https://github.com/dhairyaameria/World-Models-Hack)
 
 An autonomous disaster-rescue agent that sees and hears, running inside a real-time world model (Reactor, Lingbot-World-2) with Gemini Robotics ER 2 as its brain. Plan and step-by-step prompts: [BUILD_PROMPTS.md](BUILD_PROMPTS.md). Message contract: [shared/contract.md](shared/contract.md).
 
