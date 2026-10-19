@@ -1,0 +1,21 @@
+# Render Blueprint for the FastAPI backend (the Next.js frontend deploys to Vercel).
+services:
+  - type: web
+    name: rescuesim-backend
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: AGENT_MODE
+        value: mock
+      - key: CORS_ORIGINS
+        sync: false # your Vercel URL, e.g. https://world-models-hack.vercel.app
+      - key: CORS_ORIGIN_REGEX
+        value: https://.*\.vercel\.app

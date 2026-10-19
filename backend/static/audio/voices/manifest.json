@@ -1,0 +1,74 @@
+[
+ {
+  "file": "help_im_stuck_weak.wav",
+  "text": "Help! I'm stuck under here!",
+  "style": "weak, exhausted, frightened, calling out",
+  "voice": "Kore"
+ },
+ {
+  "file": "help_im_stuck_panicked.wav",
+  "text": "Help! Somebody help me, I'm stuck!",
+  "style": "panicked, shouting",
+  "voice": "Fenrir"
+ },
+ {
+  "file": "is_anyone_there_child.wav",
+  "text": "Is anyone there? I'm scared.",
+  "style": "child, crying, frightened",
+  "voice": "Leda"
+ },
+ {
+  "file": "dont_come_this_way.wav",
+  "text": "Don't come this way, the floor collapsed!",
+  "style": "urgent, shouting",
+  "voice": "Charon"
+ },
+ {
+  "file": "leg_trapped.wav",
+  "text": "My leg is trapped, please hurry.",
+  "style": "in pain, breathing hard",
+  "voice": "Puck"
+ },
+ {
+  "file": "over_here_shout.wav",
+  "text": "Over here! On the car roof!",
+  "style": "loud, shouting",
+  "voice": "Zephyr"
+ },
+ {
+  "file": "by_the_stairs.wav",
+  "text": "Over here, by the stairs!",
+  "style": "tired, calling out",
+  "voice": "Aoede"
+ },
+ {
+  "file": "ayuda_spanish.wav",
+  "text": "¡Ayuda! ¡Estoy atrapada aquí!",
+  "style": "frightened, shouting",
+  "voice": "Kore"
+ },
+ {
+  "file": "bachao_hindi.wav",
+  "text": "Bachao! Koi hai? Main yahan phansa hoon!",
+  "style": "frightened, shouting",
+  "voice": "Puck"
+ },
+ {
+  "file": "please_im_in_here.wav",
+  "text": "Please... I'm in here... I can't move my leg.",
+  "style": "weak, hoarse, exhausted, frightened",
+  "voice": "Kore"
+ },
+ {
+  "file": "robot_callout.wav",
+  "text": "This is a rescue robot. If you can hear me, call out!",
+  "style": "",
+  "voice": "Charon"
+ },
+ {
+  "file": "tv_news_decoy.wav",
+  "text": "Good evening. In tonight's top story, emergency crews continue their work across the city.",
+  "style": "calm news anchor",
+  "voice": "Charon"
+ }
+]

@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Calm futurism: light, airy canvas; one deep teal accent; precision over neon.
+   Accents are reserved by role: sound = audio only, hazard = hazards/overrides only,
+   survivor = located/escaped only. */
+:root {
+  --canvas: #f5f7f6;
+  --surface: #ffffff;
+  --line: #e3e8e6;
+  --ink: #122220;
+  --muted: #6b7a77;
+  --primary: #0f6b63;
+  --primary-text: #0f6b63;  /* teal used as text/lines */
+  --on-primary: #ffffff;
+  --tint: #ddf0eb;
+  --sound: #e8a33d;
+  --sound-tint: #fbf0dc;
+  --hazard: #e05a47;
+  --hazard-tint: #fbe7e3;
+  --survivor: #2fa66a;
+  --survivor-tint: #e1f3e9;
+  --frame: #0c1413;          /* the one dark element: the world video frame */
+  --chart: #0f6b63;
+}
+
+/* Optional dark mode for a stage projector: same accents, darker canvas and surfaces. */
+[data-theme="dark"] {
+  --canvas: #0c1413;
+  --surface: #131d1b;
+  --line: #22302d;
+  --ink: #e8efed;
+  --muted: #8fa09c;
+  --primary-text: #5cc2b6;  /* teal text needs a lighter step on dark surfaces */
+  --tint: #173a35;
+  --sound-tint: #3a2d14;
+  --hazard-tint: #3a1e1a;
+  --survivor-tint: #15301f;
+  --frame: #070c0b;
+  --chart: #3e9c92;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-text: var(--primary-text);
+  --color-on-primary: var(--on-primary);
+  --color-tint: var(--tint);
+  --color-sound: var(--sound);
+  --color-sound-tint: var(--sound-tint);
+  --color-hazard: var(--hazard);
+  --color-hazard-tint: var(--hazard-tint);
+  --color-survivor: var(--survivor);
+  --color-survivor-tint: var(--survivor-tint);
+  --color-frame: var(--frame);
+  --font-sans: "Satoshi", "General Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html,
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Safety override banner slides down; new-sound ring pulses once. No glows, no blur. */
+@keyframes slide-down {
+  from { transform: translate(-50%, -12px); opacity: 0; }
+  to { transform: translate(-50%, 0); opacity: 1; }
+}
+.slide-down { animation: slide-down 260ms ease-out both; }
+
+@keyframes ring-pulse {
+  from { r: 7px; opacity: 0.9; }
+  to { r: 22px; opacity: 0; }
+}
+.ring-pulse { animation: ring-pulse 1.2s ease-out 2; }
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
